@@ -1,0 +1,247 @@
+/*  */
+input {
+  outline: none;
+}
+
+/* container for employees styling */
+.employee-card-container .card {
+  background-color: #455467;
+  height: 260px;
+  width: 200px;
+  color: white;
+  border-radius: 5%;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.05),
+    1em 1em 1em rgba(0, 0, 0, 0.1);
+}
+.employee-card-container .card:hover {
+  background-color: #4d5866;
+}
+
+.info-line {
+  display: inline-block;
+  width: 200px;
+}
+
+.employee-card-container h2 {
+  font-size: 15px;
+  margin: auto;
+  font-weight: 600;
+}
+.employee-card-container h3 {
+  font-size: 15px;
+  margin: 0;
+}
+
+.employee-card-container h1 {
+  font-size: 15px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #828cf8;
+  width: 150px;
+  margin-left: 25px;
+}
+
+.employee-card-container {
+  height: 250px;
+  width: 200px;
+}
+
+.card-icon {
+  margin-right: 15px;
+}
+
+.container {
+  height: 250px;
+  width: 200px;
+}
+/* container size */
+#employe-section {
+  width: 1000px;
+  height: 100%;
+  margin: auto;
+}
+
+/* profile picture styling*/
+.fa-user-circle {
+  font-size: 70px;
+  margin-bottom: 5px;
+}
+.profile-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+/* add staff card */
+.edit-menu {
+  margin-left: 130px;
+  margin-top: 10px;
+}
+
+.edit-menu-content {
+  display: none;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #727cf5;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.edit-menu-content a:hover {
+  background-color: white;
+}
+
+.edit-button {
+  color: #828cf8;
+}
+
+.edit-menu-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.edit-menu:hover .edit-menu-content {
+  display: block;
+  margin-left: -10px;
+}
+
+.edit-menu-content a:hover {
+  background-color: #828cf8;
+  border-radius: 10px;
+  color: white;
+}
+
+.filter-button-container {
+  width: 1000px;
+}
+
+/* INPUT MODAL FORM */
+
+/* add button */
+.button-container {
+  position: relative;
+  margin-left: 70%;
+}
+
+.button-container i {
+  font-size: 40px;
+  color: #53c55e;
+  cursor: pointer;
+}
+.button-container i:hover {
+  font-size: 42px;
+  color: #81e98c;
+  cursor: pointer;
+}
+/* add button */
+
+/* main container in add form */
+.modal-container {
+  position: relative;
+  height: 710px;
+  width: 627px;
+  background-color: #455467;
+  border-radius: 20px;
+  left: 40%;
+  top: 15%;
+}
+
+/* left side */
+.left-side-container {
+  color: white;
+  width: 50%;
+  height: 100%;
+  margin-top: 53px;
+}
+
+.left-side-container input {
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  border: 0;
+  margin: 5px 0px 10px 50px;
+}
+
+.left-side-container label {
+  margin-left: 50px;
+}
+
+.left-side-container h1 {
+  margin-left: 80px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* right side */
+.right-side-container {
+  color: white;
+  width: 50%;
+  height: 100%;
+}
+
+.container-add-user {
+  width: 100%;
+  height: 50%;
+}
+
+.add-user {
+  font-size: 170px;
+  color: #828cf8;
+  position: absolute;
+  top: 25%;
+  left: 62%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+}
+
+.add-user-plus {
+  position: absolute;
+  font-size: 30px;
+  top: 34%;
+  left: 80%;
+  color: #c4c4c4;
+}
+
+.add-user-plus:hover {
+  color: #727cf5;
+}
+
+.info {
+  width: 251px;
+  height: 137px;
+  border-radius: 5px;
+  border: 0;
+  margin-top: 5px;
+}
+
+.hide-modal-button {
+  position: absolute;
+  color: #353638;
+  font-size: 30px;
+  cursor: pointer;
+  left: 555px;
+  top: 10px;
+}
+
+.hide-modal-button:hover {
+  display: block;
+  color: #727cf5;
+}
+
+.submit-button {
+  width: 175px;
+  height: 50px;
+  background-color: #727cf5;
+  color: white;
+  margin-left: 200px;
+  margin-top: 30px;
+  border-radius: 25px;
+  border: 0;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #7f89fc;
+}

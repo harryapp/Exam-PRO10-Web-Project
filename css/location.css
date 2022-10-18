@@ -1,0 +1,177 @@
+#location-card-section {
+  width: 750px;
+  height: 700px;
+  margin: auto;
+}
+
+#main-content-container h1 {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #727cf5;
+}
+
+.location-card-container .card {
+  width: 300px;
+  height: 380px;
+  background-color: #455467;
+  color: white;
+  display: flex;
+  border-radius: 10%;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.05),
+    1em 1em 1em rgba(0, 0, 0, 0.1);
+}
+
+.location-card-container .card:hover,
+.location-card-container .card-info:hover {
+  background-color: #4d5866;
+}
+
+.location-card-container .card-image img {
+  width: 300px;
+  height: 160px;
+  border-radius: 0;
+}
+
+.card .menu {
+  color: #727cf5;
+  margin-left: 45px;
+  cursor: pointer;
+}
+.card .menu:hover {
+  color: #7f89fc;
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-left: 33%;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.card h2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 120%;
+  left: -10%;
+  border-bottom: 1px solid #727cf5;
+}
+
+.location-card-container .card-info {
+  background-color: #455467;
+  margin: 20px;
+}
+
+.card-image p {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.card-image i {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.dropdown-menu .dropdown-content {
+  width: 85px;
+  background-color: #727cf5;
+}
+
+.dropdown-item {
+  background-color: #727cf5;
+}
+.dropdown-item a:hover {
+  background-color: #7f89fc;
+}
+
+/* BUTTON */
+
+.button-container {
+  margin-left: 1200px;
+  margin-top: 65px;
+}
+
+.button-container i {
+  font-size: 40px;
+  color: #53c55e;
+  cursor: pointer;
+}
+.button-container i:hover {
+  font-size: 42px;
+  color: #e99981;
+  cursor: pointer;
+}
+
+/* INPUT MODAL FORM */
+
+.modal-container {
+  height: 600px;
+  width: 450px;
+  background-color: #455467;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 150px;
+  display: flex;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.input-container input {
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  border: 0;
+  margin: 5px 0px 10px 50px;
+}
+
+.input-container label {
+  margin-left: 50px;
+}
+
+.input-container h1 {
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+.hide-modal-button {
+  position: absolute;
+  color: #353638;
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 402px;
+  margin-top: 10px;
+}
+
+.hide-modal-button:hover {
+  display: block;
+  color: #727cf5;
+}
+
+.submit-button {
+  width: 150px;
+  height: 32px;
+  background-color: #727cf5;
+  color: white;
+  margin-left: 90px;
+  margin-top: 20px;
+  border-radius: 25px;
+  border: 0;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #7f89fc;
+}

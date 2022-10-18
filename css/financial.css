@@ -1,0 +1,102 @@
+.key-figure-container {
+  margin-left: 310px;
+  margin-bottom: 15px;
+}
+
+.gauge-chart h3 {
+  color: white;
+  margin-left: 100px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.button-container {
+  margin-left: 650px;
+  margin-bottom: 25px;
+}
+
+.date-button {
+  background-color: #727cf5;
+  border: 0;
+  color: white;
+  border-radius: 0;
+  margin: 0;
+}
+
+.date-button:hover {
+  color: white;
+  background-color: #7f89fc;
+}
+
+.button-arrow-left {
+  width: 100px;
+  border: 0;
+  background-color: #727cf5;
+  border-radius: 25px;
+  color: white;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: -5px;
+}
+
+.button-arrow-left:hover {
+  color: white;
+  background-color: #7f89fc;
+}
+
+.button-arrow-right {
+  width: 100px;
+  border: 0;
+  background-color: #727cf5;
+  border-radius: 25px;
+  color: white;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: -5px;
+}
+
+.button-arrow-right:hover {
+  color: white;
+  background-color: #7f89fc;
+}
+
+/* DATA  */
+
+.data-container .card {
+  height: 450px;
+  background-color: #4d5866;
+  color: white;
+  border-radius: 15px;
+}
+
+.data-container {
+  margin: 25px 0px 0px 25px;
+}
+
+.compare-card {
+  margin-left: -30px;
+  margin-top: -25px;
+}
+
+.dropdown-compare {
+  margin: 0;
+}
+
+.dropdown-main {
+  margin-left: 27px;
+}
+
+#content-header {
+  margin-left: 30px;
+}
+
+.dropdown-menu,
+.dropdown-item {
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  border-radius: 10px;
+}

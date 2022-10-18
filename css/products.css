@@ -1,0 +1,161 @@
+.product-section .card {
+  width: 300px;
+  height: 380px;
+  background-color: #455467;
+  color: white;
+  display: flex;
+  border-radius: 20%;
+}
+
+.card-content .card {
+  background-color: #455467;
+  height: 250px;
+  width: 200px;
+  color: white;
+  font-size: 13px;
+  border-radius: 10%;
+}
+
+#product-section {
+  width: 1000px;
+  height: 100%;
+  margin: auto;
+}
+
+.card h2 {
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: solid 1px #727cf5;
+  margin-bottom: 20px;
+}
+
+.card-content .card {
+  background-color: #455467;
+  color: white;
+}
+
+.card-content .card:hover {
+  background-color: #4d5866;
+}
+
+/* dropdown menu */
+
+.edit-menu {
+  margin-left: 130px;
+  margin-top: 10px;
+}
+
+.edit-menu-content {
+  display: none;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #727cf5;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.edit-menu-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.edit-menu:hover .edit-menu-content {
+  display: block;
+  margin-left: -30px;
+}
+
+.edit-menu-content a:hover {
+  background-color: #828cf8;
+  border-radius: 10px;
+  color: white;
+}
+
+.description{
+  margin-bottom: 30px;
+}
+
+
+/* Add Button */
+.fa-plus-circle {
+  color: #53c55e;
+  font-size: 50px;
+  display: block;
+  margin-left: 400px;
+  position: relative;
+  left: 1000px;
+}
+
+.fa-plus-circle:hover {
+  filter: brightness(75%);
+}
+
+/* INPUT MODAL FORM */
+
+.modal-container {
+  height: 600px;
+  width: 450px;
+  background-color: #455467;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 150px;
+  display: flex;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.input-container input {
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  border: 0;
+  margin: 5px 0px 10px 50px;
+}
+
+.input-container label {
+  margin-left: 50px;
+}
+
+.input-container h1 {
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+.hide-modal-button {
+  position: absolute;
+  color: #353638;
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 402px;
+  margin-top: 10px;
+}
+
+.hide-modal-button:hover {
+  display: block;
+  color: #727cf5;
+}
+
+.submit-button {
+  width: 150px;
+  height: 32px;
+  background-color: #727cf5;
+  color: white;
+  margin-left: 90px;
+  margin-top: 20px;
+  border-radius: 25px;
+  border: 0;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #7f89fc;
+}

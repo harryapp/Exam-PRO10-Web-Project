@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="icon" href="/icon/pizza.png" type="icon" />
+    <script src="/scripts/global.js"></script>
+    <script defer type="module" src="scripts/Sales.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- teste apexcharts  -->
+    <title>Golden pizza</title>
+  </head>
+  <body>
+    <div id="root">
+      <nav class="navbar is-fixed-top columns" id="header-container">
+        <div class="column is-4 is-offset-2" id="search-box ">
+          <input class="input" id="search-input-field" type="text" placeholder="Search..." />
+          <i class="fas fa-search" id="search-icon"></i>
+        </div>
+        <div class="column is-2 is-offset-4" id="profile-box">
+          <i class="fas fa-user-circle" id="user-img"></i>
+          <a href="login-page.html"> <i class="sign-out-button fas fa-sign-out-alt"></i></a>
+        </div>
+      </nav>
+      <div class="columns">
+        <nav class="column is-2" id="sidepanel-container">
+          <div class="menu">
+            <ul class="menu-list">
+
+              <li>
+                <a href="/sales.html" class="menu-item">
+                  <i class="fas fa-coins"></i>
+                  <span class="text">Sales</span>
+                </a>
+              </li>
+              <li>
+                <a href="/finance.html" class="menu-item">
+                  <i class="fas fa-balance-scale-left"></i>
+                  <span class="text">Financial</span>
+                </a>
+              </li>
+              <li>
+                <a href="/employees.html" class="menu-item">
+                  <i class="far fa-address-card"></i>
+                  <span class="text">Staff</span>
+                </a>
+              </li>
+              <li>
+                <a href="/locations.html" class="menu-item">
+                  <i class="fas fa-map-marker-alt"> </i><span class="text">Locations</span>
+                </a>
+              </li>
+              <li>
+                <a href="/products.html" class="menu-item">
+                  <i class="fas fa-pizza-slice"></i>
+                  <span class="text">Products</span>
+                </a>
+              </li>
+              <li>
+                <a href="/schedule.html" class="menu-item">
+                  <i class="far fa-calendar-alt"></i>
+                  <span class="text">Schedule</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="column " id="main-content-container">
+          <!-- test -->
+          <div class="container ">
+            <span class="tag is-info is-large">Year:</span>
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                  <span id="year-search-display">2020</span>
+                  <span class="icon is-small">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                <div class="dropdown-content">
+                  <a value="2021" class="dropdown-item dropdown-year"> 2021</a>
+                  <a value="2020" class="dropdown-item dropdown-year"> 2020</a>
+                  <a value="2019" class="dropdown-item dropdown-year"> 2019</a>
+                  <a value="2018" class="dropdown-item dropdown-year"> 2018</a>
+                </div>
+              </div>
+            </div>
+
+            <span class="tag is-info is-large">Month:</span>
+            <div id="month-dropdown" class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                  <span id="month-search-display">January</span>
+                  <span class="icon is-small">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                <div class="dropdown-content">
+                  <a value="1" class="dropdown-item dropdown-month"> January</a>
+                  <a value="2" class="dropdown-item dropdown-month"> February</a>
+                  <a value="3" class="dropdown-item dropdown-month"> March</a>
+                  <a value="4" class="dropdown-item dropdown-month"> April</a>
+                  <a value="5" class="dropdown-item dropdown-month"> May</a>
+                  <a value="6" class="dropdown-item dropdown-month"> June</a>
+                  <a value="7" class="dropdown-item dropdown-month"> July</a>
+                  <a value="8" class="dropdown-item dropdown-month"> August</a>
+                  <a value="9" class="dropdown-item dropdown-month"> September</a>
+                  <a value="10" class="dropdown-item dropdown-month"> October</a>
+                  <a value="11" class="dropdown-item dropdown-month"> November</a>
+                  <a value="12" class="dropdown-item dropdown-month"> December</a>
+                </div>
+              </div>
+            </div>
+            <span class="tag is-info is-large">Day:</span>
+            <div id="day-dropdown" class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                  <span id="day-search-display">1</span>
+                  <span class="icon is-small">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                <div id="day-dropdown-content" class="dropdown-content"></div>
+              </div>
+            </div>
+            <span class="tag is-info is-large">Store-ID:</span>
+            <div id="storeID-dropdown" class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                  <span id="storeID-search-display">1</span>
+                  <span class="icon is-small">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                <div class="dropdown-content">
+                  <a value="1" class="dropdown-item dropdown-storeID">1</a>
+                  <a value="2" class="dropdown-item dropdown-storeID">2</a>
+                  <a value="3" class="dropdown-item dropdown-storeID">3</a>
+                  <a value="4" class="dropdown-item dropdown-storeID">4</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container background-light-grey p-2 my-2">
+            <div class="has-text-centered">
+              <h4 class="title is-4 mt-2 title-underline has-text-white">Gross Revenue</h4>
+              <div id="chart"></div>
+            </div>
+          </div>
+          <div
+            class="
+              container pizza-container
+              background-light-grey
+              p-2
+              my-2
+              is-flex is-justify-content-space-between
+              px-6
+              has-text-centered
+            "
+          >
+            <div class="is-flex is-flex-direction-column mx-6">
+              <h4 class="title is-4 mt-2 title-underline has-text-white">Quantity</h4>
+              <div id="pie-chart-one"></div>
+            </div>
+            <div class="is-flex is-flex-direction-column mx-6b">
+              <h4 class="title is-4 mt-2 title-underline has-text-white">Gross Margin</h4>
+              <div id="pie-chart-two"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

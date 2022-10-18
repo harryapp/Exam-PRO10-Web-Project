@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/Employee.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="icon" href="/icon/pizza.png" type="icon" />
+    <script defer type="module" src="scripts/EmployeeGenerate.js"></script>
+    <script defer type="module" src="scripts/EmployeeInputFormModule.js"></script>
+    <title>Golden pizza</title>
+  </head>
+  <body>
+    <div id="root" class="">
+      <nav class="navbar is-fixed-top columns" id="header-container">
+        <div class="column  is-4 is-offset-2" id="search-box ">
+            <input class="input" id="search-input-field" type="text" placeholder="Search...">
+            <i class="fas fa-search" id="search-icon"></i>
+        </div>
+         <div class="column is-2 is-offset-4" id="profile-box">
+            <i class="fas fa-user-circle" id="user-img"></i>
+            <a href="login-page.html"> <i class="sign-out-button fas fa-sign-out-alt"></i></a>
+        </div> 
+    </nav>
+        <div class="columns">
+            <nav class="column is-2" id="sidepanel-container" >
+                <div class="menu">
+                    <ul class="menu-list">
+
+                        <li>
+                            <a href="/sales.html" class="menu-item">
+                                <i class="fas fa-coins"></i>   
+                                <span class="text">Sales</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/finance.html" class="menu-item">
+                                <i class="fas fa-balance-scale-left"></i>
+                                <span class="text">Financial</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/employees.html" class="menu-item">
+                                <i class="far fa-address-card"></i>                                
+                                <span class="text">Staff</span>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="/locations.html" class="menu-item">
+                                <i class="fas fa-map-marker-alt">
+                            </i><span class="text">Locations</span>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="/products.html" class="menu-item">
+                                <i class="fas fa-pizza-slice"></i>                                
+                                <span class="text">Products</span>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="/schedule.html" class="menu-item">
+                                <i class="far fa-calendar-alt"></i>
+                                <span class="text">Schedule</span>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        <div
+          class="column"
+          id="main-content-container"
+          style="border: solid 2px#727CF5"
+        >
+              <div class="filter-button-container">
+                <button
+                  type="button"
+                  class="filter-button "
+                  id="showAllBtn"
+                >
+                  Show all
+                </button>
+                <button
+                  type="button"
+                  class="filter-button  "
+                  id="KarlJohanBtn"
+                >
+                  Karl Johan
+                </button>
+                <button
+                  type="button"
+                  class="filter-button  "
+                  id="AkerBryggeBtn"
+                >
+                  Aker Brygge
+                </button>
+                <button
+                  type="button"
+                  class="filter-button "
+                  id="BispevikaBtn"
+                >
+                  Bispevika
+                </button>
+                <button
+                  type="button"
+                  class="filter-button "
+                  id="MajorstuenBtn"
+                >
+                  Majorstuen
+                </button>
+                
+              </div>
+              <section
+              id="employe-section"
+              class="columns is-flex is-flex-wrap-wrap"
+            ></section>
+            
+              <div id="show-modal-button" class="button-container"><i class="fas fa-plus-circle"></i></div>
+              <!-- Input -->
+              <div class="modal">
+                <div class="modal-background">
+                    <div class="modal-container columns">
+                        <i class="far fa-times-circle hide-modal-button"></i>
+                        <div class="left-side-container column is-half is-flex is-flex-direction-column">
+                          <h1>Add new Employee</h1>
+                            <label for="">First name</label>
+                            <input  class="" type="name">
+                            <label for="">Last name</label>
+                            <input type="name">
+                            <label for="">Location</label>
+                            <input type="location">
+                            <label for="">Role</label>
+                            <input type="position">
+                            <label for="">Salary</label>
+                            <input type="Salary">
+                            <label for="">Phone Number</label>
+                            <input type="phone">
+                            <button class="submit-button">Save</button>
+                        </div>
+                        <div class="right-side-container column is-half is-flex is-flex-direction-column">
+                          <div class="container-add-user is-align-content-center is-flex">
+                            <i class="far fa-user-circle add-user"></i>
+                            <i class="fas fa-plus-circle add-user-plus"></i>
+                          </div>
+                          <div class="column">
+                          <label for="">Additional Information</label>
+                          <input class="info" type="text">
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

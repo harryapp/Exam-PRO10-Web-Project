@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/schedule.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="icon" href="/icon/pizza.png" type="icon">
+    <script src="/scripts/global.js"></script>
+    <title >Golden pizza</title>
+</head>
+<body>
+    <div id="root" >
+        <nav class="navbar is-fixed-top columns" id="header-container">
+            <div class="column  is-4 is-offset-2" id="search-box ">
+                <input class="input" id="search-input-field" type="text" placeholder="Search...">
+                <i class="fas fa-search" id="search-icon"></i>
+            </div>
+             <div class="column is-2 is-offset-4" id="profile-box">
+                <i class="fas fa-user-circle" id="user-img"></i>
+                <a href="login-page.html"> <i class="sign-out-button fas fa-sign-out-alt"></i></a>
+            </div> 
+        </nav>
+            <div class="columns">
+                <nav class="column is-2" id="sidepanel-container" >
+                    <div class="menu">
+                        <ul class="menu-list">
+                            <li>
+                                <a href="/sales.html" class="menu-item">
+                                    <i class="fas fa-coins"></i>   
+                                    <span class="text">Sales</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/finance.html" class="menu-item">
+                                    <i class="fas fa-balance-scale-left"></i>
+                                    <span class="text">Financial</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/employees.html" class="menu-item">
+                                    <i class="far fa-address-card"></i>                                
+                                    <span class="text">Staff</span>
+                            </a>
+                            </li>
+                            <li>
+                                <a href="/locations.html" class="menu-item">
+                                    <i class="fas fa-map-marker-alt">
+                                </i><span class="text">Locations</span>
+                            </a>
+                            </li>
+                            <li>
+                                <a href="/products.html" class="menu-item">
+                                    <i class="fas fa-pizza-slice"></i>                                
+                                    <span class="text">Products</span>
+                            </a>
+                            </li>
+                            <li>
+                                <a href="/schedule.html" class="menu-item">
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span class="text">Schedule</span>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                    <div id="main-content-container">
+
+                        <div class="schedule-container">
+
+                            <div class="location-bar">
+                                <div class="location-button-main">Aker Brygge</div>
+                                <div class="location-button">Bispevika</div>
+                                <div class="location-button">Karl Johan</div>
+                                <div class="location-button">Majorstuen</div>
+                            </div>
+
+                            <div class="date-bar">
+                                <div class="date-picker"><p><i class="arrow left"></i>8 Sep - 14 Sep<i class="arrow right"></i></p></div>
+                                <div class="week-button">Week</div>
+                                <div class="month-button">Month</div>
+                            </div>
+
+                            <div class="schedule-plan-container">
+                                
+                                <div class="schedule-date-bar">
+                                    <div class="date-item">Mon 8 Sep</div>
+                                    <div class="date-item">Tue 9 Sep</div>
+                                    <div class="date-item">Wed 10 Sep</div>
+                                    <div class="date-item">Thu 11 Sep</div>
+                                    <div class="date-item">Fri 12 Sep</div>
+                                    <div class="date-item">Sat 13 Sep</div>
+                                    <div class="date-item">Sun 14 Sep</div>
+                                </div>
+
+                                <div class="employee-schedule employee-first">
+                                    <div class="employee-item">Per Johansen</div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">PJ</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">PJ</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">PJ</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">PJ</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">PJ</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">PJ</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">PJ</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                </div>
+
+                                <div class="employee-schedule employee-second">
+                                    <div class="employee-item">Bjørn Olsen</div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">BO</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">BO</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">BO</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">BO</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">BO</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">BO</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">BO</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                </div>
+
+                                <div class="employee-schedule employee-third">
+                                    <div class="employee-item">Mange Mortensson</div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">MM</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">MM</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">MM</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">MM</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">MM</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">MM</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">MM</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                </div>
+
+                                <div class="employee-schedule employee-fourth">
+                                    <div class="employee-item">Emanuel Qvarnstorm</div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">EQ</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">EQ</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">EQ</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">EQ</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">EQ</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">EQ</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">EQ</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                </div>
+
+                                <div class="employee-schedule employee-fifth">
+                                    <div class="employee-item">Maiken Schumacher</div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">MS</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">MS</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">MS</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">MS</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">MS</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">MS</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <div class="schedule-item-left">MS</div>
+                                        <div class="schedule-item-right">08:00 16:00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</body>
+</html>

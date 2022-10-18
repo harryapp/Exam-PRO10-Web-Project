@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link
+      rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="icon" href="/icon/pizza.png" type="icon" />
+    <script src="/scripts/global.js"></script>
+    <script defer type="module" src="/scripts/FinanceGenerate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./css/financial.css">
+    <title >Golden pizza</title>
+</head>
+<body>
+    <div id="root" >
+      <nav class="navbar is-fixed-top columns" id="header-container">
+        <div class="column  is-4 is-offset-2" id="search-box ">
+            <input class="input" id="search-input-field" type="text" placeholder="Search...">
+            <i class="fas fa-search" id="search-icon"></i>
+        </div>
+         <div class="column is-2 is-offset-4" id="profile-box">
+            <i class="fas fa-user-circle" id="user-img"></i>
+            <a href="login-page.html"> <i class="sign-out-button fas fa-sign-out-alt"></i></a>
+        </div> 
+    </nav>
+        <div class="columns">
+            <nav class="column is-2" id="sidepanel-container" >
+                <div class="menu">
+                    <ul class="menu-list">
+
+                        <li>
+                            <a href="/sales.html" class="menu-item">
+                                <i class="fas fa-coins"></i>   
+                                <span class="text">Sales</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/finance.html" class="menu-item">
+                                <i class="fas fa-balance-scale-left"></i>
+                                <span class="text">Financial</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/employees.html" class="menu-item">
+                                <i class="far fa-address-card"></i>                                
+                                <span class="text">Staff</span>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="/locations.html" class="menu-item">
+                                <i class="fas fa-map-marker-alt">
+                            </i><span class="text">Locations</span>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="/products.html" class="menu-item">
+                                <i class="fas fa-pizza-slice"></i>                                
+                                <span class="text">Products</span>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="/schedule.html" class="menu-item">
+                                <i class="far fa-calendar-alt"></i>
+                                <span class="text">Schedule</span>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        <div
+          class="column"
+          id="main-content-container"
+
+        >
+          <div class="key-figure-container">
+            <div class="columns key-figure-meter">
+              <div class="column is-3 gauge-chart">
+                <h3>Likviditetsgrad</h3>
+                <div id="chart-0"></div>
+              </div>
+              <div class="column is-3 gauge-chart">
+                <h3>Lønnsomhet</h3>
+                <div id="chart-1"></div>
+              </div>
+              <div class="column is-3 gauge-chart">
+                <h3>Soliditet</h3>
+                <div id="chart-2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <div class="controll dark-mode-text">
+              <button class="button button-arrow-left " id="btn-decrement"><</button>
+              <button class="button date-button " id="btn-change-date-view">
+                Show Annual 
+              </button>
+              <button class="button button-arrow-right" id="btn-increment">></button>
+            </div>
+          </div>
+          <div>
+          </div>
+          <div id="data-content" class="data-section">
+              <div class="columns">
+                <!-- Main data-->
+                <div class="column ">
+                  <h3 id="content-header" class="dark-mode-text"></h3>
+                  <div class="dropdown  dropdown-main is-hoverable">
+                    <div class="dropdown-trigger">
+                      <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span id="main-dropdown-txt">All</span>
+                        <span class="icon is-small">
+                          <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                      <div class="dropdown-content ">
+                        <button class="dropdown-item" id="dropdown-all-main-data">All</button>
+                        <button class="dropdown-item" id="dropdown-aker-brygge-main-data">Aker Brygge</button>
+                        <button class="dropdown-item" id="dropdown-bispevika-main-data">Bispevika</button>
+                        <button class="dropdown-item" id="dropdown-majorstuen-main-data">Majorstuen</button>
+                        <button class="dropdown-item" id="dropdown-karl-johan-main-data">Karl Johan</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="main-data" class="data-container">
+                    <!-- main data output-->
+                  </div>
+                </div>
+                <!-- Compare data-->
+                <div class="column">
+                  <h3 class="dark-mode-text">Compare With:</h3>
+                  <div class="dropdown dropdown-compare is-hoverable">
+                    <div class="dropdown-trigger ">
+                      <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span id="compare-dropdown-txt">All</span>
+                        <span class="icon is-small">
+                          <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                      <div class="dropdown-content ">
+                        <button class="dropdown-item" id="dropdown-all-compare-data">All</button>
+                        <button class="dropdown-item" id="dropdown-aker-brygge-compare-data">Aker Brygge</button>
+                        <button class="dropdown-item" id="dropdown-bispevika-compare-data">Bispevika</button>
+                        <button class="dropdown-item" id="dropdown-majorstuen-compare-data">Majorstuen</button>
+                        <button class="dropdown-item" id="dropdown-karl-johan-compare-data">Karl Johan</button>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <div id="compare-data" class="data-container">
+                    <!-- compare data output-->
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div id="line-chart"></div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

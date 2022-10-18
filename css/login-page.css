@@ -1,0 +1,116 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input {
+  outline: none;
+}
+
+body {
+  margin: 0;
+}
+
+.bg-image {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url("/images/coffeeshop_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.login-form {
+  background-color: #eef2f7;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 370px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+}
+
+.input-container label {
+  font-size: 15px;
+  margin: 15px 0 10px 0;
+  font-weight: 500;
+}
+
+.input-container input {
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.input-container input::placeholder {
+  padding-left: 10px;
+  color: rgba(0, 0, 0, 0.493);
+}
+
+.input-container button {
+  width: 256px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 0;
+  color: white;
+  background-color: #727cf5;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background-color: #7f89fc;
+}
+
+.forgotten-password {
+  margin: auto;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.forgotten-password p {
+  margin: 0;
+  font-size: 12.5px;
+}
+
+.forgotten-password p:hover {
+  font-weight: 500;
+}
+
+.contact {
+  margin: auto;
+  margin-top: 45px;
+}
+
+.contact p {
+  margin: 0;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+.contact p:hover {
+  font-weight: 500;
+}
